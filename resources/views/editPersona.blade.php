@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
-  .NatJur
-
+  .NatJur {}
+  .inputfield{ height:30px}
 </style>
 <head>
   <!-- Required meta tags -->
@@ -170,22 +170,130 @@
   </div>
 
 
-<div class="row" style="margin: 40px; font-size: 1.2em;">
+<div class="container" style="font-size: 0.9em;">
+
+      
+
+          <div class="card-header col-sm-12" id="headingOne" style="background: #e7e7e7;">
+            <input type="checkbox" data-toggle="collapse" data-target="#collapsediv1" style="font-size: 1.2em;"> Cliente</>
+          </div>
+          <div id='collapsediv1' class='collapse p-4  border  col-lg-12 row' style="margin-left:1px;">
+
+
+            <div class="col-lg-5">
+                                 <div class="form-group row" style="margin-bottom: 1px; ">
+                                    <label class="col-lg-4 col-form-label text-right" for="porcobrar">Cuentas por cobrar:</label>
+                                    <div class="col-sm-6 input-group">
+                                      <input type="text" class="form-control" id="porcobrar" placeholder="...">
+                                      <div class="input-group-btn input-group-append">
+                                            <button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                                      </div>
+                                    </div>
+                                </div>
+
+                               <div class="form-group row NatJur" style="margin-bottom: 1px; "> 
+                                      <label class="col-lg-4 col-form-label text-right" for="vendedor">Vendedor:</label>
+                                      <div class="col-sm-6">
+                                        <select class="form-control" id="vendedor" style="font-size: 1.11em;">
+                                          <option>vendedor 1</option>
+                                          <option>vendedor 2</option>
+                                          <option>vendedor 3</option>
+                                        </select>
+                                      </div>
+                                </div>
+
+
+                                <div class="form-group row NatJur" style="margin-bottom: 1px; ">
+                                    <label class="col-lg-4 col-form-label text-right" for="descuento">Descuento:</label>
+                                    <div class="col-sm-6">
+                                      <input type="texto" class="form-control  inputfield" id="descuento" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row etqta" style="margin-bottom: 1px; ">
+                                    <label class="col-lg-4 col-form-label text-right" for="paraexport">Para Exportación:</label>
+                                    <div class="form-inline">
+                                      <input type="checkbox" class="form-control" id="paraexport">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row" style="margin-bottom: 1px; ">
+                                    <label class="col-lg-4 col-form-label text-right" for="centrocosto">Centro de costo:</label>
+                                    <div class="col-sm-6 input-group">
+                                      <input type="text" class="form-control" id="centrocosto" placeholder="...">
+                                      <div class="input-group-btn input-group-append">
+                                            <button class="btn btn-secondary" style="background: #ecf0f1; color: black;"><i class="fa fa-search"></i></button>
+                                      </div>
+                                    </div>
+                                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                                <div class="form-group row NatJur" style="margin-bottom: 1px; ">
+                                    <label class="col-lg-3 col-form-label text-right" for="saldoini">Saldo inicial:</label>
+                                    <div class="col-sm-5">
+                                      <input type="texto" class="form-control  inputfield" id="saldoini" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row" style="margin-bottom: 1px; ">
+                                    <label class="col-lg-3 col-form-label text-right" for="PVP">PVP por defecto:</label>
+                                    <div class="col-sm-5 input-group">
+                                      <input type="text" class="form-control" id="PVP" placeholder="...">
+                                      <div class="input-group-btn input-group-append">
+                                            <button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                                      </div>
+                                    </div>
+
+
+
+                                <div class="form-group row" style="margin-bottom: 1px; ">
+                                      <label class="col-lg-5 col-form-label text-right" for="manual">Manual:</label>
+                                      <div class="form-inline col-lg-3">
+                                      <input type="checkbox" class="form-control" id="manual">
+                                    </div>
+                                </div>
+
+                                </div>
+            </div>
+          </div>
+          
+      </div>
+
 
       <div class="col-lg-12" >
           <div class="card-header col-sm-12" id="headingOne" style="background: #e7e7e7;">
-            <input type="checkbox" data-toggle="collapse" data-target="#collapsediv1"> Cliente</>
+            <input type="checkbox" data-toggle="collapse" data-target="#collapsedivX"> Proveedor</>
           </div>
 
-          <div id='collapsediv1' class='collapse p-4  border'>
-            <div class="col-lg-6">
-              
-            </div>
-            <div class="col-lg-6">
-              
-            </div>
+          <div id='collapsedivX' class='collapse p-4  border'>
+
+                                  <div class="col-lg-6">
+                                      <div class="form-group row" style="margin-bottom: 1px; ">
+                                            <label class="col-lg-5 col-form-label text-right" for="ciarelacionada">Cia Relacionada:</label>
+                                            <div class="form-inline col-lg-3">
+                                            <input type="checkbox" class="form-control" id="ciarelacionada">
+                                          </div>
+                                      </div>
+         
+                                  </div>
+            
+                                  <div class="col-lg-6">
+                                      <div class="form-group row" style="margin-bottom: 1px; ">
+                                            <label class="col-lg-5 col-form-label text-right" for="artesano">Artesano:</label>
+                                            <div class="form-inline col-lg-3">
+                                            <input type="checkbox" class="form-control" id="artesano">
+                                          </div>
+                                      </div>
+         
+                                  </div>
           </div>
       </div>
+
+
+
 
       <div class="col-lg-12" >
           <div class="card-header col-sm-12" id="headingOne" style="background: #e7e7e7;">
@@ -193,12 +301,26 @@
           </div>
 
           <div id='collapsediv2' class='collapse p-4  border'>
-            <div class="col-lg-6">
-              
-            </div>
-            <div class="col-lg-6">
-              
-            </div>
+
+                                  <div class="col-lg-6">
+                                      <div class="form-group row" style="margin-bottom: 1px; ">
+                                            <label class="col-lg-5 col-form-label text-right" for="gerente">Gerente:</label>
+                                            <div class="form-inline col-lg-3">
+                                            <input type="checkbox" class="form-control" id="gerente">
+                                          </div>
+                                      </div>
+         
+                                  </div>
+            
+                                  <div class="col-lg-6">
+                                      <div class="form-group row" style="margin-bottom: 1px; ">
+                                            <label class="col-lg-5 col-form-label text-right" for="pasante">Pasante:</label>
+                                            <div class="form-inline col-lg-3">
+                                            <input type="checkbox" class="form-control" id="pasante">
+                                          </div>
+                                      </div>
+         
+                                  </div>
           </div>
       </div>
 
@@ -217,7 +339,7 @@
           </div>
       </div>
 
-            <div class="col-lg-12" >
+      <div class="col-lg-12" >
           <div class="card-header col-sm-12" id="headingOne" style="background: #e7e7e7;">
             <input type="checkbox" data-toggle="collapse" data-target="#collapsediv4"> Vendedor</>
           </div>
