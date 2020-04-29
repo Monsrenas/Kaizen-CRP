@@ -24,9 +24,22 @@ class KaizenController extends Controller
         ->withServiceAccount($serviceAccount)
         ->withDatabaseUri('https://kaizen-arp.firebaseio.com/')
         ->create();
+        return $firebase->getDatabase();
 
-        $database = $firebase->getDatabase();
 
+    }
+
+    public function Guardar(Request $request) 
+    {   
+        $atm=$this->GeneraModeloPersona($request);
+        
+        $database=$this->index();
+        $newPost = $database->getReference('Persona')
+        ->set($atm);
+    }
+
+    public function Actualizar() 
+    {
         $newPost = $database
         ->getReference('blog/posts')
         ->update([
@@ -35,5 +48,13 @@ class KaizenController extends Controller
         ]);
         echo '<pre>';
         print_r($newPost->getvalue());
+
+
+    }
+
+    public function GeneraModeloPersona($request)
+    {
+        $atm = array('Cliente' => $request->cliente);
+        return $atm;
     }
 }

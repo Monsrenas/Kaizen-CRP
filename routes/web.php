@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('firebase','KaizenController@index');
+Route::post('Guardar','KaizenController@Guardar');
+
 Route::get('/', function () {
     return view('welcome');
 });
